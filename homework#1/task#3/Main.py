@@ -8,15 +8,11 @@
 # 123456 -> no
 import random
 
-num = random.randint(100000, 999999)
+num = str(random.randint(100000, 999999))
 
-if (num%10 + int(num/10%10) + int(num/100%10)) == (int(num/1000%10) + int(num/10000%10) + int(num/100000)):
-    print(
-        f'{num} {num % 10} + {int(num / 10 % 10)} + {int(num / 100 % 10)} = {int(num / 1000 % 10)} + '
-        f'{int(num / 10000 % 10)} + {int(num / 100000)}')
+if (int(num[0]) + int(num[1]) + int(num[2])) == (int(num[3]) + int(num[4]) + int(num[5])):
+    print(f'{int(num[0])} + {int(num[1])} + {int(num[2])} = {int(num[3])} + {int(num[4])} + {int(num[5])}')
     print('Yes')
 else:
-    print(
-        f'{num} {num % 10} + {int(num / 10 % 10)} + {int(num / 100 % 10)} не = {int(num / 1000 % 10)} + '
-        f'{int(num / 10000 % 10)} + {int(num / 100000)}')
+    print(f'{int(num[0])} + {int(num[1])} + {int(num[2])} = {int(num[3])} + {int(num[4])} + {int(num[5])}')
     print('no')
