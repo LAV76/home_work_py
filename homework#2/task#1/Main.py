@@ -18,8 +18,8 @@ for i in range(number_coins):
     # side_coin = int(input('Введиде сторону монеты 1 или 0  '))
     # coins.append(random.randint(0, 1))
     # coins.append(side_coin)
-    if side_coin ==0:
-        coins_side +=1
+    if side_coin == 0:
+        coins_side += 1
 
 print(f'Количество монет, которые нужно перевернуть {coins_side}')
 # print(coins)
