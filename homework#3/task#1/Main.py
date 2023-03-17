@@ -17,7 +17,7 @@ list = []
 num = random.randint(-10, 10)
 arr_len = random.randint(1, 50)
 
-for i in range(arr_len):
+for i in range(arr_len+1):
     list.append(random.randint(-10, 10))
     if list[i] == num:
         sum +=1
