@@ -20,7 +20,7 @@ lang = 0
 
 for i in word:
     if i in rus_word:
-        count +=1
+        count += 1
         lang = 1
     if i in eng_word:
         count += 1
