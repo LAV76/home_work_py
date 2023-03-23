@@ -13,3 +13,20 @@
 # # заданной во входном файле грядки.
 # 4 -> 1 2 3 4
 # 9
+
+import random
+
+# n = int(input('Введиде кол-во кустов '))
+n = random.randint(1, 10)
+i = 0
+numbe_berries = list()
+while i < n:
+    # numbe_berries.append(int(input(f'Введиде кол-во ягод на {i + 1} кусте ')))
+    numbe_berries.append(random.randint(1, 5))
+    i +=1
+sum = list()
+for i in range(len(numbe_berries) - 1):
+    sum.append(numbe_berries[i-1] + numbe_berries[i] + numbe_berries[i+1])
+sum.append(numbe_berries[0] + numbe_berries[-1] + numbe_berries[-2])
+
+print(max(sum))
