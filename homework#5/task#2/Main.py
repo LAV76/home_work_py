@@ -5,9 +5,7 @@
 # 2 2
 # 4
 
-def math_sum(a: int, b: int):
-    if b == 1:
-        return a
-    return a + math_sum(a, b-1)
+def math_sum(a: int, b: int) -> int:
+    return math_sum(a+1, b-1) if b > 0 else a
 
-print(math_sum(2, 2))
+print(math_sum(3, 3))
