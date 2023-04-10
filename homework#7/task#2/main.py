@@ -30,6 +30,6 @@ num_rows = random.randint(1, 9)
 num_columns = random.randint(1, 9)
 # num_rows = int(input("Введите количество строк: "))
 # num_columns = int(input("Введите количество столбцов: "))
-print_operation_table(lambda x,y: x*y,num_rows,num_columns)
+print_operation_table(lambda x, y: x*y, num_rows, num_columns)
 
 
